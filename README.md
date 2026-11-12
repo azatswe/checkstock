@@ -1,2 +1,20 @@
-# checkstock
-Inventory management system built with FastAPI and PostgreSQL. Supports warehouse stock tracking, FBS/FBO shipments, reservations, and stock transfers.
+# CheckStock
+
+Небольшой MVP веб-прототип складского учёта. Требуемый стек тестового задания: Python, FastAPI, PostgreSQL. На этом первом этапе подготовлен только запускаемый каркас FastAPI; подключение PostgreSQL и складские функции будут добавляться отдельными небольшими этапами.
+
+## Запуск локально
+
+Требуется Python 3.9 или новее.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Откройте <http://127.0.0.1:8000/>. Проверка доступности приложения: <http://127.0.0.1:8000/health>.
+
+## Текущий этап
+
+Подготовлен минимальный запускаемый каркас FastAPI и стартовая страница. База данных и складские функции пока не реализованы.
